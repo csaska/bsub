@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # encoding: utf-8
 """
 Passed job ids, hold further execution until those jobs finish.
@@ -42,7 +42,7 @@ def bsez(args):
         else:
             args2.append(a[1:])
     kwargs = dict(zip(args2[::2], args2[1::2]))
-    print bsub(job_name, f, **kwargs)()
+    print(bsub(job_name, f, **kwargs)())
 
 
 
